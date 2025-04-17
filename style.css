@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f3f4f7, #d9e4f5);
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+
+.dice.rolling {
+  transform: rotate(360deg) scale(1.1);
+}
+
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
