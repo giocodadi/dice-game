@@ -23,9 +23,6 @@ function rollDice() {
   dice1.classList.add("rolling");
   dice2.classList.add("rolling");
 
-  // Suono (opzionale)
-  // const audio = new Audio("audio/roll.mp3");
-  // audio.play();
 
   setTimeout(() => {
     dice1.src = diceImages[die1 - 1];
