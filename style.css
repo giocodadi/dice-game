@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
-  background:#ffe6f0;
+  background:linear-gradient(to right, #ffe6f0);
   padding-top: 50px;
 }
 
