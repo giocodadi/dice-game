@@ -34,6 +34,31 @@
   </br>
   </br>
 
+  <script>
+
+
+    const diceFaces = ["⚀", "⚁", "⚂", "⚃", "⚄", "⚅"];
+
+    function rollDice() {
+      // Possibili combinazioni che danno 11: (5,6) e (6,5)
+      const combos = [
+        [5, 4],
+        [4, 5],
+		[6, 3],
+		[3, 6]
+		
+      ];
+      const [die1, die2] = combos[Math.floor(Math.random() * combos.length)];
+
+      document.getElementById('dice1').textContent = diceFaces[die1 - 1];
+      document.getElementById('dice2').textContent = diceFaces[die2 - 1];
+      document.getElementById('sum').textContent = die1 + die2;
+    }
+
+    rollDice();
+
+
+  </script>
   <button onclick="rollDice()"> 🎲 Tira i dadi! 🎲 </button>
 
   </br> 
