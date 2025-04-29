@@ -10,8 +10,8 @@ function rollDice() {
   ];
 
   const combos = [
-    [6, 3],
-    [5, 4]
+    [4, 4],
+    [4, 4]
   ];
 
   const [die1, die2] = combos[Math.floor(Math.random() * combos.length)];
